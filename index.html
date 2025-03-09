@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jennifer Capriaty | Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: radial-gradient(circle at 50% 50%, #ffd1dc,#ffc4de,#e4b5e8,#d9b1e6, #dea6eb, #b5a3f4, #c1b6f2, #fbe4b0);
+      background-attachment: fixed;
+      color: white;
+      scroll-behavior: smooth;
+    }
+    
+   
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 2em;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 1em;
+      font-weight: 300;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #cccccc;
+    }
+
+    .intro-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6em 2em;
+    }
+
+    .left-section, .right-section {
+      flex: 1;
+      text-align: center;
+      padding: 2em;
+    }
+
+    .divider {
+      width: 2px;
+      height: 300px;
+      background-color: rgba(255, 255, 255, 0.3);
+      margin: 0 3em;
+    }
+
+    .left-section h1 {
+      font-size: 3.5em;
+      margin: 0;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: moveIn 2s ease-out forwards;
+    }
+
+    .left-section p {
+      font-size: 1.2em;
+      margin-top: 0.5em;
+    }
+
+    button {
+      margin-top: 2em;
+      padding: 1em 2.5em;
+      font-size: 1em;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.2);
+      border: 1px solid white;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: white;
+      color: #a24db3;
+    }
+
+    .right-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 1em;
+    }
+
+    .content-box {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 2em;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .left-section {
+      padding: 6em 2em;
+      text-align: center;
+      opacity: 0;
+      transform: translateX(50px);
+      animation: fadeInSection 1.5s ease-out forwards 1s;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 1em;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .list {
+      list-style-type: disc;
+      padding-left: 2em;
+      margin: 0;
+    }
+
+    .list li {
+      padding: 0.5em 0;
+      font-size: 1.1em;
+      font-weight: 300;
+    }
+    a{
+      color: #a24db3;
+    }
+
+    footer {
+      padding: 2em;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    footer a {
+      color: #c7b8ea;
+      text-decoration: none;
+      text-decoration: underline;
+    }
+
+    @keyframes moveIn {
+      from {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInSection {
+      from {
+        opacity: 0;
+        transform: translateX(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(20);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .intro-container {
+        flex-direction: column;
+      }
+
+      .divider {
+        width: 60%;
+        height: 2px;
+        margin: 2em 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="menu">
+      <a href="#intro">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="interest1.html">Interests</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="intro">
+    <div class="intro-container">
+      <div class="left-section">
+        <h1 id="name" style="font-family: Arial, Helvetica, sans-serif;">Jennifer Capriaty</h1>
+        <p>Aspiring UX Designer | Tech Enthusiast</p>
+        <a href="mailto:jennifercapriatyf@gmail.com"><button>Contact Me</button></a>
+      </div>
+
+      <div class="divider" ></div>
+
+      <div class="right-section">
+        <div class="about">
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">About Me</h2>
+        <div class="content-box">
+          <p style="text-align: justify;">Hello! <br> I'm Jennifer Capriaty, a final year BSc Computer Science student at Government Arts College(Autonomous), Kumbakonam. I'm an individual passionate about creativity, design, and continuous growth. I'm glad you're here - feel free to explore and connect!</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Skills</h2>
+    <p style="text-align: center;">Here are the key skills I have acquired through my experiences and continuous development.</p>
+    <div class="content-box">
+      <div class="skill-category">
+        <h3 style="text-align: center;">Technical Skills</h3>
+        <ul class="list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>English Typewriting</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3 style="text-align: center;">Soft Skills</h3>
+        <ul class="list">
+          <li>Empathy</li>
+          <li>Resilience</li>
+          <li>Problem Solving</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Certifications</h2>
+    <div class="content-box" style="text-align: center;">
+      <div class="certificate-item">
+        <img src="CERTIFICATE_LANDING_PAGE~3X6EAABD8K9R.jpeg" width="50%">
+      <p>Foundations of UX Design</p>
+      </div>
+      <div class="certificate-item">
+        <img src="CERTIFICATE_LANDING_PAGE~T6957W53W3LZ.jpeg" width="50%">
+      <p>UX Design Process: Empathize, Define and Ideate</p>
+      </div>
+     
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align: center;font-family: Arial, Helvetica, sans-serif;">Contact Me</h2>
+    <div class="content-box" style="text-align: center;">
+      <p>Email: <a href="mailto:jennifercapriatyf@example.com">Send me a Email</a></p>
+      <p>Website: <a href="https://jennifercapriaty.wordpress.com/" target="_blank">Check out my Website</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jennifer-capriaty/" target="_blank">Visit my LinkedIn</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Jennifer Capriaty | <a href="mailto:jennifercapriatyf@gmail.com">Email Me</a></p>
+  </footer>
+
+</body>
+</html>
+
